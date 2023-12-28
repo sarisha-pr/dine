@@ -2,26 +2,59 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+/* Common */
+body {
+  @apply text-[16px]
+    font-league-spartan;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+div,
+p,
+span {
+  @apply text-[1.25rem]
+    leading-normal;
+}
+/* End - Common */
+
+/* Container */
+@layer components {
+  .container {
+    @apply w-full
+      max-sm:px-6
+      sm:max-w-[574px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1110px]
+      mx-auto;
   }
 }
+/* End - Container */
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+/* Text Components */
+@layer components {
+  .heading-xl {
+    @apply font-light 
+      text-[2rem] md:text-[3rem] lg:text-[5rem] 
+      leading-tight lg:leading-none 
+      -tracking-[0.4px] md:-tracking-[0.6px] lg:-tracking-[1px];
+  }
+
+  .heading-l {
+    @apply font-bold 
+      text-[2rem] md:text-[3rem] 
+      leading-tight md:leading-none 
+      -tracking-[0.4px] md:-tracking-[0.5];
+  }
+
+  .heading-m {
+    @apply font-bold
+      text-[1.25rem]
+      leading-tight
+      -tracking-[0.25px];
+  }
+
+  .heading-s {
+    @apply font-semibold
+      text-[1rem]
+      leading-[1.75]
+      tracking-[2.5px];
+  }
 }
+/* End - Text Components */
