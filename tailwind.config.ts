@@ -9,13 +9,20 @@ const config: Config = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    screens:{
+      xs:'390px',
+      sm:'576px',
+      md:'768px',
+      lg:'992px',
+      xl:'1280px',
+    },
     colors: {
       black: '#000000',
       white: '#FFFFFF',
       primary: {
         DEFAULT: '#9e7f66',
         beaver: '#9e7f66',
-        cod: '#9e7f66',
+        cod: '#111111',
       },
       secondary: {
         DEFAULT: '#17192b',

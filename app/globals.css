@@ -5,13 +5,14 @@
 /* Common */
 body {
   @apply text-[16px]
-    font-league-spartan;
+    font-league-spartan
+    text-secondary-ebony;
 }
 
 div,
 p,
 span {
-  @apply text-[1.25rem]
+  @apply lg:text-[1.25rem]
     leading-normal;
 }
 /* End - Common */
@@ -20,8 +21,8 @@ span {
 @layer components {
   .container {
     @apply w-full
-      max-sm:px-6
-      sm:max-w-[574px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1110px]
+      max-md:px-6
+      sm:max-w-[20.5rem] md:max-w-[574px] lg:max-w-[920px] xl:max-w-[1110px]
       mx-auto;
   }
 }
@@ -58,3 +59,11 @@ span {
   }
 }
 /* End - Text Components */
+
+/* Box Shadows */
+@layer components {
+  .img-shadows {
+    box-shadow: 0px 75px 100px -50px rgba(56, 66, 85, 0.5);
+  }
+}
+/* End - Box Shadows */
