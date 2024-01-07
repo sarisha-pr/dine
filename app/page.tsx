@@ -4,6 +4,7 @@ import HighlightList from "@/components/Highlight/HighlightList";
 import HighlightItemImage from "@/components/Highlight/HighlightItemImage";
 import HighlightItemDesc from "@/components/Highlight/HighlightItemDesc";
 import Lines from "@/components/Pattern/Lines";
+import Slider from "@/components/Slider/Slider";
 
 export default function Home() {
   return (
@@ -49,6 +50,7 @@ export default function Home() {
       </section>
       {/* End - HERO */}
 
+      {/* Introduction */}
       <section className="overflow-hidden relative max-md:pb-28 -mt-20 lg:-my-20">
         \{/* 1 */}
         <div className="relative">
@@ -132,6 +134,7 @@ export default function Home() {
         </div>
         {/* End - 2 */}
       </section>
+      {/* End - Introduction */}
 
       {/* Highlight */}
       <section className="py-28 lg:py-48 text-white bg-primary-cod">
@@ -234,6 +237,17 @@ export default function Home() {
         </div>
       </section>
       {/* End - Highlight */}
+
+      {/* Slider */}
+      <section className="py-28 lg:py-48">
+        <div className="relative container">
+          <Lines className="max-md:hidden absolute left-10 top-10" />
+        </div>
+        <div className="lg:container">
+          <Slider />
+        </div>
+      </section>
+      {/* End - Slider */}
     </>
   );
 }

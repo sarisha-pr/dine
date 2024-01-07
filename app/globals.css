@@ -22,7 +22,7 @@ span {
   .container {
     @apply w-full
       max-md:px-6
-      sm:max-w-[20.5rem] md:max-w-[574px] lg:max-w-[920px] xl:max-w-[1110px]
+      sm:max-w-[20.5rem] md:max-w-[35.875rem] lg:max-w-[57.5rem] xl:max-w-[69.375rem]
       mx-auto;
   }
 }
